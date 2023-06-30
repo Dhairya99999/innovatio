@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue";
+}
+
+body {
+  
+  min-height: 100vh;
+
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+  background-color: white;
+  border-bottom: 2px solid black;
+}
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+  border: black;
+}
+header.logo {
+  position: relative;
+  font-weight: 700;
+  font-family: Epilogue;
+  color: #f15b27;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+  border: black;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4c3b31;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.6s;
+  border: black;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+}
+.logoright {
+  height: 50px;
+  width: 60px;
+}
+.logoleft {
+  height: 50px;
+  width: 130px;
+}
+div {
+  
+  outline: 2px solid black;
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+#div1 {
+  
+  
+  height: 54%;
+  background: #f15b27;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+
+#div2 {
+  height: 54%;
+  background: white;
+}
+
+#div3 {
+  background: #4c3b31;
+  
+}
+
+#div4 {
+  background: #f15b27;
+  
+
+}
+#div5 {
+  background: white;
+}
+#div6 {
+  width: 100%;
+  height: 50%;
+  background: #4c3b31;
+}
+#div7 {
+  width: 100%;
+  height: 50%;
+  background: white;
+}
+#div8 {
+  width: 100%;
+  height: 50%;
+  background: #f15b27;
+}
+#div9 {
+  width: 100%;
+  height: 33%;
+  background: #f15b27;
+}
+#div10 {
+  width: 100%;
+  height: 33%;
+  background: #4c3b31;
+}
+#div11 {
+  width: 100%;
+  height: 34%;
+  background: white;
+}
+#div12 {
+    margin-top: 5.3%;
+    width: 100%;
+    height: 33%;
+    background: #f15b27;
+  }
+  #div13 {
+    width: 100%;
+    height: 66%;
+    background: white;
+  }
+  #div14 {
+    
+    width: 100%;
+    height: 67%;
+    background: #f15b27;
+  }
+  #div15 {
+    margin-top: 5.3%;
+    width: 50%;
+    height: 100%;
+    background: white;
+  }
+  #div16 {
+    width: 50%;
+    height: 33%;
+    background: #f15b27;
+  }
+  #div17 {
+    width: 50%;
+    height: 33%;
+    background: #4c3b31;
+  }
+  #div18 {
+    margin-top: 5.3%;
+    width: 50%;
+    height: 34%;
+    background: white;
+  }
+  #div19{
+    width: 100%;
+    height: 100%;
+    background: #f15b27;
+    border-radius:0 0 0 200px;
+    outline: 0;
+    overflow: hidden;
+  }
+  #div20{
+    width: 100%;
+    height: 100%;
+    background: #4c3b31;
+    border-radius: 0 0 0 200px;
+    outline: 0;
+    overflow: hidden;
+  }
+  #div21{
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 0 200px 0 0;
+    outline: 0;
+    overflow: hidden;
+  }
+  #div22{
+    width: 100%;
+    height: 100%;
+    background: #f15b27;
+    border-radius:200px 0 0 0 ;
+    outline: 0;
+    overflow: hidden;
+  }
+  #div23{
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 0 0 200px 0;
+    outline: 0;
+    overflow: hidden;
+  
+  }
+.fill {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.orangebig{
+    
+    justify-content: center;
+    text-align: left;
+    font-family: Epilogue;
+    letter-spacing: -5.5%;
+    font-size: 40px;
+    line-height: 50px;
+    color: #4c3b31;
+}
+.whiteonOrange{
+    
+    
+    font-family: Epilogue;
+    letter-spacing: -5.5%;
+    font-size: 40px;
+    line-height: 50px;
+    color: white;
+}
+.whitebigbrown{
+    font-weight: bold;
+    font-family: Epilogue;
+    text-align: left;
+    letter-spacing: -8.5%;
+    font-size: 100px;
+    line-height: 100px;
+    color: #4c3b31;
+}
+.whitebigorange{
+    font-weight: bold;
+    font-family: Epilogue;
+    text-align: center;
+    letter-spacing: -8.5%;
+    font-size: 100px;
+    line-height: 100px;
+    color:#f15b27;
+}
+.whitesmallorange{
+    font-family: Epilogue;
+    letter-spacing: -5.5%;
+    font-size: 40px;
+    line-height: 50px;
+    color: #f15b27;
+
+}
+.whitesmallbrown{
+    font-family: Epilogue;
+    letter-spacing: -5.5%;
+    font-size: 40px;
+    line-height: 50px;
+    color:#4c3b31;
+
+}
+.orangesmall{
+    
+  
+    font-family: Epilogue;
+    text-align: left;
+    letter-spacing: -5.5%;
+    font-size: 20px;
+    line-height: 50px;
+    color: #4c3b31;
+}
+.brownbigorange{
+    font-weight: bold;
+    font-family: Epilogue;
+    text-align: center;
+    letter-spacing: -8.5%;
+    font-size: 70px;
+    line-height: 80px;
+    color:#f15b27;
+}
+.whiteonbrown{
+    
+  
+    font-family: Epilogue;
+    text-align: left;
+    letter-spacing: -5.5%;
+    font-size: 40px;
+    line-height: 50px;
+    color: white;
+}
+.orangeonbrown{
+    
+  
+    font-family: Epilogue;
+    text-align: left;
+    letter-spacing: -5.5%;
+    font-size: 40px;
+    line-height: 50px;
+    color: #f15b27;
+}
+.whitebigorange1{
+    font-weight: bold;
+    font-family: Epilogue;
+    text-align: center;
+    letter-spacing: -8.5%;
+    font-size: 70px;
+    line-height: 80px;
+    color:#f15b27;
+}
+.whitebigbrown1{
+    font-weight: bold;
+    font-family: Epilogue;
+    text-align: center;
+    letter-spacing: -8.5%;
+    font-size: 70px;
+    line-height: 80px;
+    color:#4c3b31;
+}
+.center
+{ 
+  text-align: left;
+  justify-self: center;
+  padding-top: 60px;
+  padding-left: 25px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
+   #div3, #div4, #div5, #div6, #div7, #div8, #div12, #div13, #div14, #div15, #div16, #div17, #div18{
+  margin-top: 0%;
+    height: 56%;
+    width: 100%;
+
+  }
+  #div1{
+    margin-top:0;
+    height: 56%;
+    width: 100%;
+    overflow: hidden;
+  }
+  #div2{
+    margin-top: 0;
+    height: 50%;
+    width: 100%;
+  }
+  #div10 , #div9{
+    height: 37%;
+  }
+  #div11
+  {
+    height: 37%;
+  }
+  #div19, #div20, #div21, #div22, #div23{
+  border-radius: 0 0 0 0;
+  }
+  .orangebig, .whiteonOrange, .whitebigbrown, .whitebigorange, .whitesmallorange, .whitesmallbrown, .orangesmall, .brownbigorange, .whiteonbrown, .orangeonbrown, .whitebigorange1, .whitebigbrown1{
+    font-size: 6vw;
+    line-height: 8vw;
+    overflow: hidden;
+  }
+  .whitebigbrown, .whitebigorange{
+    font-size: 26vw;
+    line-height: 29vw;
+  }
+  .WB{
+    padding-right: 10px;
+    
+  }
+    
+    #hh1{
+      display: none;
+    }
+  
+  }
+  .topnav {
+    background-color: #4c3b31;
+    overflow: hidden;
+  }
+  
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+  .active {
+    height: 49px;
+    background-color: #f15b27;
+    color: white;
+  }
+  
+ 
+  .topnav .icon {
+    display: none;
+  }
+  
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+ 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  .dropdown-content a {
+    float: none;
+    color: #4c3b31;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+ 
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #4c3b31;
+    color: white;
+  }
+  
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: #4c3b31;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  
