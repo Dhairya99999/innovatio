@@ -3,27 +3,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovatio</title>
     <link href = "style.css" rel="stylesheet">
+    <link href="trash.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-           <a href="/index.html"><img src = "/logo1.png" class = "logoleft"></a> </a> 
+      <body>
+        <header id="hh1">
+           <a href="/index.html"><img src = "/logo1.png" class = "logoleft"></a>
            <ul>
-            <li><a href="/about.html" target="_blank">About us</a></li>
-            <li><a href="/solutions.html" target="_blank">Solutions</a></li>
-            <li><a href="#">Highlights</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Work with us</a></li>
-            <li><a href="/contact.html">Contact us</a></li>
-            <li><a href="/index.html"><img src = "/logo.png" class = "logoright"></a> </a> </li>
+            <li><a href="/about.html" target="_self">About us</a></li>
+            <li><a href="/solutions.html" target="_self" >Solutions</a></li>
+            <li><a href="/highlight.html" target="_self">Highlights</a></li>
+            <li><a href="#" target="_self">Clients</a></li>
+            <li><a href="/work_with_us.html" target="_self">Work with us</a></li>
+            <li><a href="/contact.html" target="_self">Contact us</a></li>
            </ul>
+           <a href="/index.html"><img src = "/logo.png" class = "logoright"></a>
         </header>
         <section class="banner">
-            <div id="div15"> </div>
-            <div id="div18"> </div>
-            <div id="div16"> </div>
-            <div id="div17"> </div>
+          <div class="topnav" id="myTopnav" style="width: 100%; z-index: 20000000;">
+            <a href="/index.html"><img src="logom.png" style="height: 25px;"></a>
+            
+            <a href="/about.html">About us</a>
+            <a href="/solutions.html">Solutions</a>
+            <a href="/highlight.html">Highlights</a>
+            <a href="#">Clients</a>
+            <a href="/work_with_us.html">Work with us</a>
+            <a href="/contact.html">Contact us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+            <div id="div15" data-animation="fadeInLeft"><p style="padding-top: 12%; padding-left: 13%;"><span class="whitebigbrown">Contact</span><span class="whitebigorange"> Us</span></p><br>
+              <form>      
+                <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <input name="number" type="number" class="feedback-input" placeholder="Contact Number" />
+                <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+                <input type="submit" value="SUBMIT"/>
+              </form>
+            
+            
+            
+            
+            
+            </div>
+            <div id="div18" data-animation="fadeInRight"><p class= center; style=" padding-top: 18%; padding-left: 2%;"><span class="orangebig">+91 98991 50052 <br>jyotir001@gmail.com</span></p> </div>
+            <div id="div16" data-animation="fadeInRight" ><p class= center; style=" padding-top: 17%; padding-left: 2%;"><span class="orangebig">+91 99998 87154 <br>
+                fazalwasim@gmail.com</span></p>  </div>
+            <div id="div17" data-animation="fadeInRight"><p class= center; style=" padding-top: 17%; padding-left: 2%;"><span class="whiteonbrown">+91 7042621655 <br>
+                ab28kc@gmail.com</span></p>  </div>
             
            
             
@@ -35,6 +65,35 @@
             })
             
             </script>
+             <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+                </script>
+                 <script>
+                  const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                      console.log(entry.target.getAttribute("data-animation"));
+            
+                      const animation = entry.target.getAttribute("data-animation");
+            
+                      if (entry.isIntersecting) {
+                        entry.target.classList.add("animated", `${animation}`);
+                      } else {
+                        entry.target.classList.remove("animated", `${animation}`);
+                      }
+                    });
+                  });
+            
+                  const animatedEls = document.querySelectorAll("[data-animation]");
+                  animatedEls.forEach((el) => observer.observe(el));
+            
+                </script>
             </body>
             </html>
         

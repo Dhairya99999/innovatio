@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trash1.css">
+</head>
+<body>
+    <main>
+
+        
+        <section>
+            <div data-animation="bounce">
+                <h3>This is Heading</h3>
+                <br />
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod natus eum laborum perspiciatis iusto
+                    autem eligendi ad id quo similique laudantium, blanditiis cupiditate mollitia dolor debitis rerum excepturi
+                    labore!
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div data-animation="bounce">
+                <h3>This is Heading</h3>
+                <br />
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod natus eum laborum perspiciatis iusto
+                    autem eligendi ad id quo similique laudantium, blanditiis cupiditate mollitia dolor debitis rerum excepturi
+                    labore!
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div data-animation="bounce">
+                <h3>This is Heading</h3>
+                <br />
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod natus eum laborum perspiciatis iusto
+                    autem eligendi ad id quo similique laudantium, blanditiis cupiditate mollitia dolor debitis rerum excepturi
+                    labore!
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div data-animation="bounce">
+                <h3>This is Heading</h3>
+                <br />
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod natus eum laborum perspiciatis iusto
+                    autem eligendi ad id quo similique laudantium, blanditiis cupiditate mollitia dolor debitis rerum excepturi
+                    labore!
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div data-animation="bounce">
+                <h3>This is Heading</h3>
+                <br />
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod natus eum laborum perspiciatis iusto
+                    autem eligendi ad id quo similique laudantium, blanditiis cupiditate mollitia dolor debitis rerum excepturi
+                    labore!
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div data-animation="bounce">
+                <h3>This is Heading</h3>
+                <br />
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod natus eum laborum perspiciatis iusto
+                    autem eligendi ad id quo similique laudantium, blanditiis cupiditate mollitia dolor debitis rerum excepturi
+                    labore!
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div data-animation="bounce">
+                <h3>This is Heading</h3>
+                <br />
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod natus eum laborum perspiciatis iusto
+                    autem eligendi ad id quo similique laudantium, blanditiis cupiditate mollitia dolor debitis rerum excepturi
+                    labore!
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		console.log(entry.target.getAttribute("data-animation"));
+
+		const animation = entry.target.getAttribute("data-animation");
+
+		if (entry.isIntersecting) {
+			entry.target.classList.add("animated", `${animation}`);
+		} else {
+			entry.target.classList.remove("animated", `${animation}`);
+		}
+	});
+});
+
+const animatedEls = document.querySelectorAll("[data-animation]");
+animatedEls.forEach((el) => observer.observe(el));
+
+    </script>
+</body>
+</html>
