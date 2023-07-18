@@ -66,7 +66,12 @@ header ul li a {
   font-weight: 500;
   transition: 0.6s;
   border: black;
-}}
+  }
+}
+
+
+
+
 .banner {
   position: relative;
   width: 100%;
@@ -759,7 +764,7 @@ margin-bottom: 0%;
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
-   #div3, #div4, #div5, #div6, #div7, #div8,  #div13, #div14, #div16, #div17, #div18{
+   #div3, #div4, #div5, #div6, #div7, #div8,  #div13, #div14, #div16, #div17, #div18, #div1_1, #div8_8{
   margin-top: 0%;
     height: 56%;
     width: 100%;
@@ -771,23 +776,40 @@ margin-bottom: 0%;
     width: 50%;
     height: 50%;
     float: left;
+    
   }
-  #div1,#div12, #div15{
+
+  #div10_10{
+    height: 90%;
+  }
+
+  #div1,#div12, #div15, #div1_1{
     position:absolute; 
     margin-top:50px ;
     height: 50%;
     width: 100%;
     overflow: hidden;
   }
-  #div2{
+  #div15_15{
+    height: 55%;
+    width: 100%;
+    overflow: hidden;
+  }
+  #div2,#div2_2{
     position:relative; 
     margin-top: 0;
     height: 61%;
     width: 100%;
   }
-  #div10 , #div9{
+  #div10 , #div9 {
     height: 37%;
   }
+
+  #div10_10, #div11_11,#div10w, #div9w {
+    height: 25%;
+  }
+
+
   #div11
   {
     height: 37%;
@@ -806,9 +828,28 @@ margin-bottom: 0%;
     line-height: 8vw;
     overflow: hidden;
   }
+
+  .orange_30px, .whitesmallbrownz{
+    font-size: 4vw;
+    line-height: 4vw;
+    overflow: hidden;
+  }
+
+
+  #div10_10 #div10_100 #div10_1 h1,  #div10_10 #div10_100 #div10_1 p,  #div11_11 h1, #div11_11 p {
+    font-size: 1vw;
+    line-height: 2vw;
+    overflow: hidden;
+  }
+
   .whitebigbrown, .whitebigorange {
     font-size: 26vw;
     line-height: 29vw;
+  }
+
+ .feedback-input input{
+    display: flex;
+    flex-direction: column;
   }
   
   .WB{
@@ -940,13 +981,13 @@ margin-bottom: 0%;
 
   .feedback-input {
     color:white;
-    font-family: Epilogue ;
-    font-weight:500;
-    font-size: 18px;
+    font-family: 'Epilogue' ;
+    font-weight:100;
+    font-size: 10px;
     border-radius: 5px;
-    line-height: 22px;
+    line-height: 12px;
     background-color: transparent;
-    border:2px solid#F47346;
+    border:2px solid #F47346;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -954,6 +995,8 @@ margin-bottom: 0%;
     box-sizing: border-box;
     outline:0;
   }
+
+  .feedback-input 
   
   .feedback-input:focus { border:2px solid#F47346; }
   
@@ -1024,6 +1067,64 @@ margin-bottom: 0%;
     margin-bottom: 15px;
     margin-top: 0.3%;
     width:100%;
+    box-sizing: border-box;
+    outline:0;
+    text-align: center;
+  }
+  
+  .feedback-input:focus { border:2px solid#F47346; }
+  
+  textarea {
+    height: 120px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  
+  [type="submit"]:hover { background:#CC4949; }
+#formw { max-width:600px; margin:1% auto; }
+  .left_form {
+    width: 90%;
+    margin: 0.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    outline: none;
+  }
+  .right_form{
+    width: 90%;
+    margin: 0.5%;
+margin-left: 5%;
+margin-right: 5%;
+    outline: none;
+  }
+  .feedback-input {
+    color:#4c3b31;
+    font-family: Epilogue ;
+    font-weight:100;
+    font-size: 10px;
+    border-radius: 5px;
+    line-height: 10px;
+    background-color: transparent;
+    border:2px solid#41403f;
+    transition: all 0.3s;
+    padding: 3px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    outline:0;
+    text-align: center;
+  }
+  .feedback-inputs {
+    color:white;
+    font-family: Epilogue ;
+    font-weight:100;
+    font-size: 10px;
+    border-radius: 5px;
+    line-height: 10px;
+    background-color:#4c3b31;
+    border:2px solid#41403f;
+    transition: all 0.3s;
+    padding-top: 3px;
+    margin-bottom: 1px;
     box-sizing: border-box;
     outline:0;
     text-align: center;
